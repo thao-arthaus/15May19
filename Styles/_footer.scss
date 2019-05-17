@@ -1,0 +1,78 @@
+@import 'variables';
+footer{
+    font-weight: normal;
+    font-size:14px;
+    background-color: $blackColor;
+    color:white;
+    padding:16px 1rem;
+    line-height: 18px;
+    .footer-wrapper{
+        position: relative;
+        
+        .privacy-statement{
+            //position:absolute;
+            transition: opacity 1s ease-in-out;
+            opacity: 0; 
+            height: 0;
+            overflow: hidden;
+        }
+        .privacy-statement.expanded{
+            // display: block;
+            margin-bottom: 8px;
+            opacity: 1;
+            height: auto;
+            h4{
+                font-size: 17px; 
+                padding-bottom: 8px;
+            }
+            p{
+                color: $grayColor; 
+            }
+        
+        }
+        ul{
+            li{
+                list-style: none;
+                margin-top:4px;
+                //padding:2px 2px 2px 0px;
+            }
+            #privacy-statement-btn{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            //down arrow for showing privacy statement
+            .fa-sort-down{
+                font-size: 18px;
+                //padding: 2px;
+                margin-left: 5px;
+                transition: .1s;
+                transform-origin: 50% 75%;
+                //border:1px solid red;
+            }
+            @media (min-width:760px){
+                display: flex;
+                //style for HSBC Group
+                li:nth-child(2){
+                    order: 1;
+                    border-right: 1px solid white;
+                    margin-right: 8px;
+                    padding-right: 8px;
+                }
+                //Copyright
+                li:nth-child(3){
+                    order:2;
+                }
+                //privacy statement toggle btn
+                li:nth-child(1){
+                    order:3;
+                    text-align: right;
+                    flex-grow: 2;
+                    
+                }
+        
+            }
+        }    
+    }
+    
+    
+}
