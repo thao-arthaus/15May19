@@ -6,6 +6,14 @@
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  height: 100%;
+}
+body{min-height: 100%;position: relative;padding-bottom: 8rem;}
+main{
+  
+  padding-top:100px;
+  //overflow: auto;
+  
 }
 
 /*apply a natural box layout model to all elements*/
