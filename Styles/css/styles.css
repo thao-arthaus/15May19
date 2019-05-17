@@ -155,14 +155,14 @@ nav .select-language-btn {
 nav .menu-icon {
   width: 30px;
   height: 30px;
-  background-image: url(/images/bars-solid.png);
+  background-image: url("../../images/bars-solid.png");
   background-size: 30px;
   background-position: center;
   background-repeat: no-repeat;
   transition: .1s;
   cursor: pointer; }
 nav .menu-icon.active {
-  background-image: url(/images/times-solid.png);
+  background-image: url("../../images/times-solid.png");
   background-size: 20px;
   background-repeat: no-repeat; }
 nav .main-menu-list {
