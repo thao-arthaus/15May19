@@ -64,7 +64,7 @@ nav .select-language-btn {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background-image: url("../../images/chevron-down-solid.png"), linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+  background-image: url("../../images/chevron-down-solid.svg"), linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
   background-color: #ffffff;
   color: #252525;
   background-position: right 4px top 50%, 0 0;
@@ -108,7 +108,7 @@ nav .menu-icon {
 }
 
 nav .menu-icon.active {
-  background-image: url("../../images/times-solid.png");
+  background-image: url("../../images/times-solid.svg");
   background-size: 20px;
   background-repeat: no-repeat;
 }
