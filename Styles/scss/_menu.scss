@@ -77,7 +77,7 @@ nav{
           font-weight:normal;
         } 
         &:hover, &:focus {
-          color: #000;
+          color: black;
           font-size:12px;
           background-color:#f3f3f3;
           outline:none;
@@ -92,7 +92,7 @@ nav{
         width: 30px;
         height: 30px;
         //border: 1px solid red;
-        background-image: url('./images/bars-solid.svg');
+        background-image: url('../images/bars-solid.svg');
         background-size: 30px;
         background-position: center;
         background-repeat: no-repeat;

@@ -85,7 +85,7 @@ nav .select-language-btn option {
 }
 
 nav .select-language-btn:hover, nav .select-language-btn:focus {
-  color: #000;
+  color: black;
   font-size: 12px;
   background-color: #f3f3f3;
   outline: none;
@@ -99,7 +99,7 @@ nav .select-language-btn::-ms-expand {
 nav .menu-icon {
   width: 30px;
   height: 30px;
-  background-image: url("./images/bars-solid.svg");
+  background-image: url("../images/bars-solid.svg");
   background-size: 30px;
   background-position: center;
   background-repeat: no-repeat;
