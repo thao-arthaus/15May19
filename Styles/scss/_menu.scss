@@ -60,7 +60,7 @@ nav{
         -moz-appearance: none;
         -webkit-appearance: none; 
         appearance: none; 
-        background-image: url(/images/chevron-down-solid.svg),linear-gradient(to bottom, #ffffff 0%,#ffffff 100%);;
+        background-image: url(/images/chevron-down-solid.png),linear-gradient(to bottom, #ffffff 0%,#ffffff 100%);;
         background-color:#ffffff;
         color:#252525;
         background-position: right 4px top 50%, 0 0;
@@ -92,7 +92,7 @@ nav{
         width: 30px;
         height: 30px;
         //border: 1px solid red;
-        background-image: url(/images/bars-solid.svg);
+        background-image: url(/images/bars-solid.png);
         background-size: 30px;
         background-position: center;
         background-repeat: no-repeat;
@@ -100,7 +100,7 @@ nav{
         cursor: pointer;
     }
     .menu-icon.active{
-        background-image: url(/images/times-solid.svg);
+        background-image: url(/images/times-solid.png);
         background-size: 20px;
         background-repeat: no-repeat;
     }
