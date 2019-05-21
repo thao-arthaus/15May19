@@ -406,6 +406,8 @@ footer {
   .ah--card-iconOnLeft figure img {
     width: 100%;
     padding-bottom: 16px; }
+.ah--card-iconOnLeft .ah--card-heading {
+  color: #252525; }
 
 html {
   -webkit-text-size-adjust: 100%;

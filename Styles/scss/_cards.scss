@@ -1,108 +1,129 @@
 .trialCards {
-  margin: 0.5rem 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+    margin: 0.5rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
 //==============CARD DEFAULT============//
 .ah--card {
-  padding: 20px;
-  border: 1px solid cadetblue;
-  width: 300px; //could be changed to fix the project
-  margin: 20px auto;
+    padding: 20px;
+    border: 1px solid cadetblue;
+    width: 300px; //could be changed to fix the project
+    margin: 20px auto;
 }
+
 .ah--card-heading {
-  font-family: boldFont;
-  margin-bottom: 10px;
+    font-family: boldFont;
+    margin-bottom: 10px;
 }
+
 .ah--card-resourceLink {
-  h4::after {
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-left: 2px;
-    font-size: 14px;
-  }
+    h4::after {
+        content: "\f105";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        margin-left: 2px;
+        font-size: 14px;
+    }
 }
 
 .ah--card-text {
-  font-family: regularFont;
-  font-size: 14px;
-  color: $grayColor;
+    font-family: regularFont;
+    font-size: 14px;
+    color: $grayColor;
 }
 
 //==============CARD WITH PHOTO============//
 .ah--card-photo {
-  padding: 0;
-  //width: 32%;
-  figure {
-    max-height: 168px;
-    overflow: hidden;
-    width: 100%;
-    img {
-      width: 100%;
+    padding: 0;
+
+    //width: 32%;
+    figure {
+        max-height: 168px;
+        overflow: hidden;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
     }
-  }
-  .ah--card-heading {
-    padding: 20px 20px 0 20px;
-  }
-  .ah--card-text {
-    padding: 0 20px 20px 20px;
-  }
+
+    .ah--card-heading {
+        padding: 20px 20px 0 20px;
+    }
+
+    .ah--card-text {
+        padding: 0 20px 20px 20px;
+    }
 }
 
 //==============CARD WITH PHOTO AND BUTTON============//
 .ah--card-photoWithBtn {
-  background-color: white;
-  padding: 0;
-  //width: 22%;
-  figure {
-    max-height: 122px;
-    overflow: hidden;
-    width: 100%;
-    img {
-      width: 100%;
+    background-color: white;
+    padding: 0;
+
+    //width: 22%;
+    figure {
+        max-height: 122px;
+        overflow: hidden;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
     }
-  }
-  .ah--card-wrapper {
-    padding: 20px;
-  }
-  .ah--card-heading {
-    color: $redColor;
-    padding: 20px 0;
-    font-size: 20px;
-  }
-  .ah--card-text {
-    padding-bottom: 20px;
-  }
+
+    .ah--card-wrapper {
+        padding: 20px;
+    }
+
+    .ah--card-heading {
+        color: $redColor;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+
+    .ah--card-text {
+        padding-bottom: 20px;
+    }
 }
 
 //==============CARD WITH ICON ON TOP ============//
 .ah--card-iconOnTop {
-  figure {
-    max-width: 48px;
-    img {
-      width: 100%;
+    figure {
+        max-width: 48px;
+
+        img {
+            width: 100%;
+        }
     }
-  }
-  .ah--card-heading {
-    margin-top: 10px;
-  }
+
+    .ah--card-heading {
+        margin-top: 10px;
+    }
 }
+
 //==============CARD WITH ICONS ON LEFT ============//
 .ah--card-iconOnLeft {
-  .ah--card-wrapper {
-    display: flex;
-  }
-  figure {
-    max-width: 42px;
-    min-width: 35px;
-    margin-right: 16px;
-    img {
-      width: 100%;
-      padding-bottom: 16px;
+    .ah--card-wrapper {
+        display: flex;
     }
-  }
+
+    figure {
+        max-width: 42px;
+        min-width: 35px;
+        margin-right: 16px;
+
+        img {
+            width: 100%;
+            padding-bottom: 16px;
+        }
+    }
+
+    .ah--card-heading {
+        color: $blackColor;
+    }
 }
