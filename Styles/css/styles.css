@@ -86,9 +86,6 @@ hr {
 input, select {
   vertical-align: middle; }
 
-body {
-  font-family: 'Open Sans', sans-serif; }
-
 nav .menu-bar {
   display: flex;
   align-items: center;
@@ -126,6 +123,7 @@ nav .select-language-btn {
   padding: 4px 16px 4px 4px;
   width: auto;
   box-sizing: border-box;
+  font-family: regularFont;
   margin: 0;
   border: 1px solid #aaa;
   -moz-appearance: none;
@@ -194,6 +192,7 @@ nav .main-menu-list {
   nav .main-menu-list .section-heading h4 {
     font-weight: normal;
     font-size: 19px;
+    font-family: lightFont;
     padding: 8px 0;
     margin-bottom: 8px;
     border-bottom: 1px solid #757575; }
@@ -203,7 +202,8 @@ nav .main-menu-list {
         margin-bottom: 14px; } }
   nav .main-menu-list .section-link {
     font-size: 14px;
-    margin: 0px 0px 8px 0; }
+    margin: 0px 0px 8px 0;
+    font-family: regularFont; }
     nav .main-menu-list .section-link::after {
       font-family: 'Font Awesome 5 Free';
       font-weight: 900;
@@ -214,6 +214,7 @@ nav .main-menu-list.expanded {
   top: 50px; }
 
 footer {
+  font-family: regularFont;
   font-weight: normal;
   font-size: 14px;
   background-color: #252525;
@@ -265,6 +266,146 @@ footer {
           order: 3;
           text-align: right;
           flex-grow: 2; } }
+
+.ah-btn {
+  font-size: 16px;
+  color: #252525;
+  padding: 16px;
+  border-radius: 2px;
+  position: relative;
+  border: 1px solid #757575;
+  font-family: regularFont;
+  display: inline-block;
+  font-size: 16px;
+  transition: .1s ease-in-out; }
+  .ah-btn:hover {
+    background-color: #252525;
+    color: white;
+    border-color: #252525;
+    cursor: pointer; }
+
+.ah-btn--icon {
+  position: relative; }
+  .ah-btn--icon::after {
+    content: '\f105';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-left: 2px;
+    font-size: 14px; }
+
+.ah-btn--large {
+  width: 100%; }
+  .ah-btn--large::after {
+    position: absolute;
+    transform: translate(0, -50%);
+    right: 0;
+    margin-right: 16px;
+    top: 50%; }
+
+.ah-btn--black {
+  color: white;
+  background-color: #252525; }
+  .ah-btn--black:hover {
+    background-color: #a5a5a5; }
+
+.ah-btn--red {
+  color: white;
+  background-color: #d40011; }
+  .ah-btn--red:hover {
+    background-color: #ffd4d7; }
+
+@font-face {
+  font-family: regularFont;
+  src: url(../fonts/UniversNextPro-Regular.ttf);
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: lightFont;
+  src: url(../fonts/UniversNextPro-Light.ttf);
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: boldFont;
+  src: url(../fonts/UniversNextPro-Bold.ttf);
+  font-style: normal;
+  font-weight: normal; }
+.trialCards {
+  margin: 0.5rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.ah--card {
+  padding: 20px;
+  border: 1px solid cadetblue;
+  width: 300px;
+  margin: 20px auto; }
+
+.ah--card-heading {
+  font-family: boldFont;
+  margin-bottom: 10px; }
+
+.ah--card-resourceLink h4::after {
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 2px;
+  font-size: 14px; }
+
+.ah--card-text {
+  font-family: regularFont;
+  font-size: 14px;
+  color: #757575; }
+
+.ah--card-photo {
+  padding: 0; }
+  .ah--card-photo figure {
+    max-height: 168px;
+    overflow: hidden;
+    width: 100%; }
+    .ah--card-photo figure img {
+      width: 100%; }
+  .ah--card-photo .ah--card-heading {
+    padding: 20px 20px 0 20px; }
+  .ah--card-photo .ah--card-text {
+    padding: 0 20px 20px 20px; }
+
+.ah--card-photoWithBtn {
+  background-color: white;
+  padding: 0; }
+  .ah--card-photoWithBtn figure {
+    max-height: 122px;
+    overflow: hidden;
+    width: 100%; }
+    .ah--card-photoWithBtn figure img {
+      width: 100%; }
+  .ah--card-photoWithBtn .ah--card-wrapper {
+    padding: 20px; }
+  .ah--card-photoWithBtn .ah--card-heading {
+    color: #d40011;
+    padding: 20px 0;
+    font-size: 20px; }
+  .ah--card-photoWithBtn .ah--card-text {
+    padding-bottom: 20px; }
+
+.ah--card-iconOnTop figure {
+  max-width: 48px; }
+  .ah--card-iconOnTop figure img {
+    width: 100%; }
+.ah--card-iconOnTop .ah--card-heading {
+  margin-top: 10px; }
+
+.ah--card-iconOnLeft .ah--card-wrapper {
+  display: flex; }
+.ah--card-iconOnLeft figure {
+  max-width: 42px;
+  min-width: 35px;
+  margin-right: 16px; }
+  .ah--card-iconOnLeft figure img {
+    width: 100%;
+    padding-bottom: 16px; }
 
 html {
   -webkit-text-size-adjust: 100%;

@@ -1,7 +1,3 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
 nav .menu-bar {
   display: flex;
   align-items: center;
@@ -59,6 +55,7 @@ nav .select-language-btn {
   padding: 4px 16px 4px 4px;
   width: auto;
   box-sizing: border-box;
+  font-family: regularFont;
   margin: 0;
   border: 1px solid #aaa;
   -moz-appearance: none;
@@ -154,6 +151,7 @@ nav .main-menu-list .section-list {
 nav .main-menu-list .section-heading h4 {
   font-weight: normal;
   font-size: 19px;
+  font-family: lightFont;
   padding: 8px 0;
   margin-bottom: 8px;
   border-bottom: 1px solid #757575;
@@ -169,6 +167,7 @@ nav .main-menu-list .section-heading h4 {
 nav .main-menu-list .section-link {
   font-size: 14px;
   margin: 0px 0px 8px 0;
+  font-family: regularFont;
 }
 
 nav .main-menu-list .section-link::after {

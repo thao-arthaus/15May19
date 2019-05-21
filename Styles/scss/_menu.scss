@@ -1,8 +1,8 @@
 @import 'variables';
-body{
-    //background-color: rgb(215, 244, 247);
-    font-family: 'Open Sans', sans-serif;
-}
+// body{
+//     //background-color: rgb(215, 244, 247);
+//     font-family: 'Open Sans', sans-serif;
+// }
 
 nav{
     
@@ -55,6 +55,7 @@ nav{
         padding: 4px 16px 4px 4px;
         width: auto;
         box-sizing: border-box;
+        font-family: regularFont;
         margin: 0;
         border: 1px solid #aaa;
         -moz-appearance: none;
@@ -147,6 +148,7 @@ nav{
         .section-heading h4{
             font-weight: normal;
             font-size: 19px;
+            font-family: lightFont;
             padding: 8px 0;margin-bottom: 8px;
             border-bottom: 1px solid $grayColor;
             @media (min-width:760px){}
@@ -158,6 +160,7 @@ nav{
         .section-link{
             font-size: 14px;
             margin: 0px 0px 8px 0;
+            font-family: regularFont;
             &::after{
                 font-family: 'Font Awesome 5 Free';
                 font-weight: 900;
