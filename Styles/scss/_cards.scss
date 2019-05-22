@@ -27,9 +27,11 @@
 .ah-card {
   padding: 20px;
   //border: 1px solid cadetblue;
-  width: 300px; //could be changed to fix the project
+  min-width: 200px; //could be changed to fix the project
+  width: 80%;
   margin: 20px auto;
   background-color: white;
+  text-align: left;
 }
 
 .ah-card--grayBackground {

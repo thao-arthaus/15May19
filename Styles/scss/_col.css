@@ -1,11 +1,19 @@
-.ah-col5 {
+.ah-colWrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  flex-direction: column;
+  justify-content: center;
 }
 
-.ah-col5 .ah-card {
-  max-width: 280px;
+.ah-col5 {
+  margin: 1rem auto;
+}
+
+.ah-col5 section {
+  width: 220px;
+}
+
+@media (min-width: 560px) {
+  .ah-col5 section {
+    display: inline-block;
+    margin: 0 10px;
+  }
 }

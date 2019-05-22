@@ -386,9 +386,11 @@ footer {
 
 .ah-card {
   padding: 20px;
-  width: 300px;
+  min-width: 200px;
+  width: 80%;
   margin: 20px auto;
-  background-color: white; }
+  background-color: white;
+  text-align: left; }
 
 .ah-card--grayBackground {
   background-color: #f0f0f0; }
@@ -534,14 +536,18 @@ p {
     position: relative;
     top: -2px; }
 
-.ah-col5 {
+.ah-colWrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  flex-direction: column; }
-  .ah-col5 .ah-card {
-    max-width: 280px; }
+  justify-content: center; }
+
+.ah-col5 {
+  margin: 1rem auto; }
+  .ah-col5 section {
+    width: 220px; }
+  @media (min-width: 560px) {
+    .ah-col5 section {
+      display: inline-block;
+      margin: 0 10px; } }
 
 html {
   -webkit-text-size-adjust: 100%;
