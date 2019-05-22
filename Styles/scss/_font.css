@@ -18,3 +18,10 @@
   font-style: normal;
   font-weight: normal;
 }
+
+@font-face {
+  font-family: thinFont;
+  src: url(../fonts/UniversNextPro-Thin.ttf);
+  font-style: normal;
+  font-weight: normal;
+}

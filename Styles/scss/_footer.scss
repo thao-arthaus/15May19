@@ -1,52 +1,62 @@
 @import 'variables';
-footer{
+
+footer {
     font-family: regularFont;
     font-weight: normal;
-    font-size:14px;
+    font-size: 14px;
     background-color: $blackColor;
-    color:white;
-    padding:16px 1rem;
+
+    padding: 16px 1rem;
     line-height: 18px;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    .footer-wrapper{
+
+    .footer-wrapper {
         position: relative;
-        
-        .privacy-statement{
+        color: white;
+
+        .privacy-statement {
             //position:absolute;
             transition: opacity 1s ease-in-out;
-            opacity: 0; 
+            opacity: 0;
             height: 0;
             overflow: hidden;
         }
-        .privacy-statement.expanded{
+
+        .privacy-statement.expanded {
             // display: block;
             margin-bottom: 8px;
             opacity: 1;
             height: auto;
-            h4{
-                font-size: 17px; 
+
+            h4 {
+                font-size: 17px;
                 padding-bottom: 8px;
+                color: white;
             }
-            p{
-                color: $grayColor; 
+
+            p {
+                color: $grayColor;
             }
-        
+
         }
-        ul{
-            li{
+
+        ul {
+            li {
                 list-style: none;
-                margin-top:4px;
+                margin-top: 4px;
                 //padding:2px 2px 2px 0px;
             }
-            #privacy-statement-btn{
+
+            #privacy-statement-btn {
                 text-decoration: underline;
                 cursor: pointer;
             }
+
             //down arrow for showing privacy statement
-            .fa-sort-down{
+            .fa-sort-down {
                 font-size: 18px;
                 //padding: 2px;
                 margin-left: 5px;
@@ -54,30 +64,34 @@ footer{
                 transform-origin: 50% 75%;
                 //border:1px solid red;
             }
-            @media (min-width:760px){
+
+            @media (min-width:760px) {
                 display: flex;
+
                 //style for HSBC Group
-                li:nth-child(2){
+                li:nth-child(2) {
                     order: 1;
                     border-right: 1px solid white;
                     margin-right: 8px;
                     padding-right: 8px;
                 }
+
                 //Copyright
-                li:nth-child(3){
-                    order:2;
+                li:nth-child(3) {
+                    order: 2;
                 }
+
                 //privacy statement toggle btn
-                li:nth-child(1){
-                    order:3;
+                li:nth-child(1) {
+                    order: 3;
                     text-align: right;
                     flex-grow: 2;
-                    
+
                 }
-        
+
             }
-        }    
+        }
     }
-    
-    
+
+
 }

@@ -1,60 +1,71 @@
+.ah-btn {
+  font-size: 16px;
+  color: #252525;
+  padding: 16px;
+  border-radius: 2px;
+  position: relative;
+  border: 1px solid #757575;
+  font-family: regularFont;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.1s ease-in-out;
+  background-color: white;
 
-.ah-btn{
-    font-size: 16px;
-    color: #252525;
-    padding:16px;
-    border-radius: 2px;
+  &:hover {
+    background-color: #252525;
+    color: white;
+    border-color: #252525;
+    padding-top: 14px;
+    top: -2px;
+    padding-bottom: 18px;
     position: relative;
-    border: 1px solid #757575;
-    font-family: regularFont;
-    display: inline-block;
-    font-size: 16px;
-    transition: .1s ease-in-out;
-   
-    &:hover{
-        background-color: #252525;
-        color: white;
-        border-color: #252525;
-        cursor: pointer;
-        
-        
-        
-    }
-}
-.ah-btn--icon{
-    position: relative;       
-    &::after{
-        content: '\f105';
-        font-family: 'Font Awesome 5 Free';
-        font-weight: 900;
-        margin-left: 2px;
-        font-size: 14px;
-    } 
+
+    cursor: pointer;
+  }
 }
 
-.ah-btn--large{
-    width: 100%;
-            &::after{
-                position: absolute;
-                transform: translate(0,-50%);
-                right: 0;
-                margin-right:16px;
-                top:50%;
-            }
-}
-.ah-btn--black{
-    color:white;
-    background-color: $blackColor;
-    &:hover{
-        background-color: lighten($color: $blackColor, $amount: 50%);
-        
-    }
-}
-.ah-btn--red{
-    color:white;
-    background-color: $redColor;
-    &:hover{
-        background-color: lighten($color:$redColor, $amount: 50%)
-    }
+.ah-btn--icon {
+  position: relative;
+
+  &::after {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 2px;
+    font-size: 14px;
+  }
 }
 
+.ah-btn--large {
+  width: 100%;
+
+  &::after {
+    position: absolute;
+    transform: translate(0, -50%);
+    right: 0;
+    margin-right: 16px;
+    top: 50%;
+  }
+}
+
+.ah-btn--black {
+  color: white;
+  background-color: $blackColor;
+  border-color: $blackColor;
+
+  &:hover {
+    background-color: lighten($color: $blackColor, $amount: 50%);
+    border-color: white;
+  }
+}
+
+.ah-btn--red {
+  color: white;
+  background-color: $redColor;
+  border-color: $redColor;
+
+  &:hover {
+    background-color: lighten($color: $redColor, $amount: 50%);
+    border-color: white;
+  }
+}

@@ -3,7 +3,6 @@ footer {
   font-weight: normal;
   font-size: 14px;
   background-color: #252525;
-  color: white;
   padding: 16px 1rem;
   line-height: 18px;
   position: absolute;
@@ -14,6 +13,7 @@ footer {
 
 footer .footer-wrapper {
   position: relative;
+  color: white;
 }
 
 footer .footer-wrapper .privacy-statement {
@@ -32,6 +32,7 @@ footer .footer-wrapper .privacy-statement.expanded {
 footer .footer-wrapper .privacy-statement.expanded h4 {
   font-size: 17px;
   padding-bottom: 8px;
+  color: white;
 }
 
 footer .footer-wrapper .privacy-statement.expanded p {
