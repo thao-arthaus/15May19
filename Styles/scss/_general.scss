@@ -97,7 +97,7 @@ p {
   font-family: regularFont;
   color: $grayColor;
   transition: 0.1s;
-
+  cursor: pointer;
   &::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;

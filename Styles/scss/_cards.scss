@@ -52,8 +52,6 @@
 }
 
 .ah-card--text {
-  //
-
   color: $grayColor;
   line-height: 1.4;
 }
@@ -78,9 +76,8 @@
   .ah-card--heading {
     padding: 20px 20px 0 20px;
   }
-
-  .ah--card-text {
-    padding: 0 20px 20px 20px;
+  .ah-card--text {
+    padding: 0 20px 20px;
   }
 }
 
@@ -114,7 +111,8 @@
   }
 
   .ah-card--text {
-    padding-bottom: 20px;
+    //padding-bottom: 20px;
+    padding: 0 0 20px 0;
     color: $redColor;
   }
 }

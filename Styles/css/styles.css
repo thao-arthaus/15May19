@@ -410,8 +410,8 @@ footer {
   padding: 0; }
   .ah-card--photo .ah-card--heading {
     padding: 20px 20px 0 20px; }
-  .ah-card--photo .ah--card-text {
-    padding: 0 20px 20px 20px; }
+  .ah-card--photo .ah-card--text {
+    padding: 0 20px 20px; }
 
 .ah-card--img {
   width: 100%;
@@ -432,7 +432,7 @@ footer {
     margin: 0;
     background-color: #f0f0f0; }
   .ah-card--photoWithBtn .ah-card--text {
-    padding-bottom: 20px;
+    padding: 0 0 20px 0;
     color: #d40011; }
 
 .ah-card--iconOnTop .ah-card--img {
@@ -525,7 +525,8 @@ p {
   font-size: 16px;
   font-family: regularFont;
   color: #757575;
-  transition: 0.1s; }
+  transition: 0.1s;
+  cursor: pointer; }
   .ah-secondaryLink::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
