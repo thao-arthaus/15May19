@@ -1,0 +1,10 @@
+.ah-col5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  flex-direction: column;
+  .ah-card {
+    max-width: 280px;
+  }
+}

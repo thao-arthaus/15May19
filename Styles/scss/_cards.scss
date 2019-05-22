@@ -35,10 +35,11 @@
 .ah-card--grayBackground {
   background-color: $lightGray;
 }
-
-.ah-card--heading {
-  //font-family: regularFont;
-  margin-bottom: 10px;
+.ah-card--wrapperWithPadding {
+  padding: 20px;
+}
+.ah-card--wrapperNoLeftPadding {
+  padding: 20px 0;
 }
 
 .ah-card--resourceLink {
@@ -55,30 +56,29 @@
   color: $grayColor;
   line-height: 1.4;
 }
-
+.ah-card--redText {
+  //padding-bottom: 20px;
+  // padding: 0px 0 20px 0;
+  color: $redColor;
+}
+.ah-card--headingAtTop {
+  color: $redColor;
+  // padding: 20px 0;
+  //font-size: 20px;
+  margin: 0;
+  background-color: $lightGray;
+}
 //==============CARD WITH PHOTO============//
 .ah-card--photo {
   padding: 0;
 
-  // //width: 32%;
-  // figure {
-
-  //
-  //     width: 100%;
-
-  //     img {
-  //         width: 100%;
-  //         vertical-align: bottom;
-  //         max-height: 168px;
-  //     }
+  // .ah-card--heading {
+  //   padding: 20px 20px 0 20px;
   // }
 
-  .ah-card--heading {
-    padding: 20px 20px 0 20px;
-  }
-  .ah-card--text {
-    padding: 0 20px 20px;
-  }
+  // .ah-card--text {
+  //   padding: 0 20px 20px;
+  // }
 }
 
 .ah-card--img {
@@ -98,23 +98,9 @@
   }
 
   //width: 22%;
-  .ah-card--wrapper {
-    padding: 20px;
-  }
-
-  .ah-card--heading {
-    color: $redColor;
-    padding: 20px 0;
-    //font-size: 20px;
-    margin: 0;
-    background-color: $lightGray;
-  }
-
-  .ah-card--text {
-    //padding-bottom: 20px;
-    padding: 0 0 20px 0;
-    color: $redColor;
-  }
+  // .ah-card--wrapper {
+  //   padding: 20px;
+  // }
 }
 
 //==============CARD WITH ICON ON TOP ============//
