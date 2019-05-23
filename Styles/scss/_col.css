@@ -1,5 +1,5 @@
 .ah-col5 {
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .ah-col5 section {
@@ -35,7 +35,7 @@
 }
 
 .ah-col4 {
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .ah-col4 section {
@@ -68,10 +68,11 @@
 }
 
 .ah-col3 {
-  margin: 0 auto;
-  justify-items: center;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  margin: 1rem auto;
+}
+
+.ah-col3 .ah-card--notDisplay {
+  display: none;
 }
 
 .ah-col3 section {
@@ -79,19 +80,28 @@
   min-width: 250px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 654px) {
   .ah-col3 {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    max-width: 700px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .ah-col3 .ah-card--notDisplay {
+    display: block;
+    background-color: transparent;
   }
   .ah-col3 section {
     min-width: 300px;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1080px) {
   .ah-col3 {
-    padding: 0 20px;
-    max-width: 1050px;
-    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+  }
+  .ah-col3 .ah-card--notDisplay {
+    display: none;
   }
 }
