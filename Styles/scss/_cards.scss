@@ -131,8 +131,8 @@
 .ah-card--iconOnLeft {
   .ah-card--wrapper {
     display: grid;
-    display: -ms-grid;
-    -ms-grid-columns: 58px auto;
+    // display: -ms-grid;
+    // -ms-grid-columns: 58px auto;
     grid-template-columns: 58px auto;
     //grid-column-gap: 16px;
   }
