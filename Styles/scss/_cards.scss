@@ -130,17 +130,19 @@
 //==============CARD WITH ICONS ON LEFT ============//
 .ah-card--iconOnLeft {
   .ah-card--wrapper {
-    display: grid;
-    display: -ms-grid;
-    -ms-grid-columns: 58px auto;
-    grid-template-columns: 58px auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     //grid-column-gap: 16px;
   }
-
-  .ah-card--img {
-    padding-bottom: 16px;
-    max-width: 42px;
-    // padding-right: 16px;
+  .ah-card--iconContainer {
+    max-width: 58px;
+  }
+  .ah-card--icon {
+    padding-right: 16px;
+    word-wrap: break-word;
+    width: 58px;
   }
 
   .ah-card--heading {

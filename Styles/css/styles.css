@@ -449,13 +449,16 @@ footer {
   margin: 0.5rem auto; }
 
 .ah-card--iconOnLeft .ah-card--wrapper {
-  display: grid;
-  display: -ms-grid;
-  -ms-grid-columns: 58px auto;
-  grid-template-columns: 58px auto; }
-.ah-card--iconOnLeft .ah-card--img {
-  padding-bottom: 16px;
-  max-width: 42px; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+.ah-card--iconOnLeft .ah-card--iconContainer {
+  max-width: 58px; }
+.ah-card--iconOnLeft .ah-card--icon {
+  padding-right: 16px;
+  word-wrap: break-word;
+  width: 58px; }
 .ah-card--iconOnLeft .ah-card--heading {
   color: #252525; }
 
