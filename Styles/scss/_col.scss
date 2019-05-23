@@ -28,7 +28,7 @@
 .ah-col4 {
   margin: 0 auto;
   section {
-    max-width: 230px;
+    max-width: 250px;
   }
   @media (min-width: 490px) {
     display: flex;
@@ -37,7 +37,6 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     section {
-      max-width: 250px;
       min-width: 230px;
     }
   }
