@@ -366,11 +366,22 @@ footer {
 .trialCards {
   margin: 0.5rem 0;
   display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
+  display: flex;
   display: flexbox;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center; }
 
 .section-background {
