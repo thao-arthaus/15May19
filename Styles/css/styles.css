@@ -86,6 +86,9 @@ hr {
 input, select {
   vertical-align: middle; }
 
+nav {
+  height: 100px; }
+
 .menu-bar {
   display: flex;
   align-items: center;
@@ -221,7 +224,7 @@ input, select {
     text-decoration: none;
     font-family: regularFont;
     line-height: 1.4;
-    transition: .1s; }
+    transition: 0.1s; }
     .main-menu-list .section-link::after {
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
@@ -605,9 +608,6 @@ body {
   min-height: 100%;
   position: relative;
   padding-bottom: 8rem; }
-
-main {
-  padding-top: 100px; }
 
 /*apply a natural box layout model to all elements*/
 * {

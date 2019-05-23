@@ -1,3 +1,7 @@
+nav {
+  height: 100px;
+}
+
 .menu-bar {
   display: flex;
   align-items: center;
@@ -180,7 +184,7 @@
   text-decoration: none;
   font-family: regularFont;
   line-height: 1.4;
-  transition: .1s;
+  transition: 0.1s;
 }
 
 .main-menu-list .section-link::after {

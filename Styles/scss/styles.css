@@ -100,6 +100,10 @@ input, select {
   vertical-align: middle;
 }
 
+nav {
+  height: 100px;
+}
+
 .menu-bar {
   display: flex;
   align-items: center;
@@ -119,7 +123,7 @@ input, select {
   margin: 0 4px;
 }
 
-@media (min-width: 10550px) {
+@media (min-width: 1055px) {
   .menu-bar li {
     margin: 0 8px;
   }
@@ -132,6 +136,13 @@ input, select {
 
 .menu-bar .select-language span {
   margin-right: 4px;
+  display: none;
+}
+
+@media (min-width: 390px) {
+  .menu-bar .select-language span {
+    display: inline;
+  }
 }
 
 @media (min-width: 1055px) {
@@ -218,7 +229,6 @@ input, select {
   z-index: 199;
   padding: 0 1rem 1rem;
   background-color: #252525;
-  color: white;
   position: relative;
   top: -600px;
   height: auto;
@@ -244,6 +254,7 @@ input, select {
 .main-menu-list .section-list {
   margin: 8px 0.5rem 0;
   line-height: 18px;
+  color: white;
 }
 
 @media (min-width: 1055px) {
@@ -252,7 +263,7 @@ input, select {
   }
 }
 
-.main-menu-list .section-heading h4 {
+.main-menu-list .section-heading {
   font-weight: normal;
   font-size: 19px;
   font-family: lightFont;
@@ -262,22 +273,26 @@ input, select {
 }
 
 @media (min-width: 1055px) {
-  .main-menu-list .section-heading h4 {
+  .main-menu-list .section-heading {
     padding: 20px 0 14px;
     margin-bottom: 14px;
   }
 }
 
 .main-menu-list .section-link {
-  font-size: 14px;
+  font-size: 1rem;
   margin: 0px 0px 8px 0;
+  color: white;
+  text-decoration: none;
   font-family: regularFont;
+  line-height: 1.4;
+  transition: 0.1s;
 }
 
 .main-menu-list .section-link::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  margin-left: 2px;
+  padding-left: 8px;
   content: "\f054";
   color: #d40011;
 }
@@ -291,7 +306,6 @@ footer {
   font-weight: normal;
   font-size: 14px;
   background-color: #252525;
-  color: white;
   padding: 16px 1rem;
   line-height: 18px;
   position: absolute;
@@ -302,6 +316,7 @@ footer {
 
 footer .footer-wrapper {
   position: relative;
+  color: white;
 }
 
 footer .footer-wrapper .privacy-statement {
@@ -320,6 +335,7 @@ footer .footer-wrapper .privacy-statement.expanded {
 footer .footer-wrapper .privacy-statement.expanded h4 {
   font-size: 17px;
   padding-bottom: 8px;
+  color: white;
 }
 
 footer .footer-wrapper .privacy-statement.expanded p {
@@ -455,9 +471,18 @@ footer .footer-wrapper ul .fa-sort-down {
   font-weight: normal;
 }
 
+@font-face {
+  font-family: thinFont;
+  src: url(../fonts/UniversNextPro-Thin.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
 .trialCards {
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 0;
   display: flex;
+  display: -ms-flexbox;
+  display: flexbox;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
@@ -474,110 +499,295 @@ footer .footer-wrapper ul .fa-sort-down {
   background-color: #f0f0f0;
 }
 
-.ah--card {
-  padding: 20px;
-  width: 300px;
-  margin: 20px auto;
-  background-color: white;
+.quote-area,
+.readTime-area {
+  max-width: 300px;
+  margin: 2rem auto;
 }
 
-.ah--card-grayBackground {
+.ah-card {
+  padding: 20px;
+  min-width: 150px;
+  max-width: 400px;
+  width: 80%;
+  margin: 10px auto;
+  background-color: white;
+  text-align: left;
+}
+
+.ah-card--grayBackground {
   background-color: #f0f0f0;
 }
 
-.ah--card-heading {
-  font-family: regularFont;
-  margin-bottom: 10px;
+.ah-card--wrapperWithPadding {
+  padding: 20px;
 }
 
-.ah--card-resourceLink h4::after {
+.ah-card--wrapperNoLeftPadding {
+  padding: 20px 0;
+}
+
+.ah-card--resourceLink h4::after {
   content: "\f105";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-left: 2px;
-  font-size: 14px;
 }
 
-.ah--card-text {
-  font-family: regularFont;
-  font-size: 14px;
+.ah-card--text {
   color: #757575;
   line-height: 1.4;
 }
 
-.ah--card-photo {
+.ah-card--redText {
+  color: #d40011;
+}
+
+.ah-card--headingAtTop {
+  color: #d40011;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.ah-card--photo {
   padding: 0;
+  margin: 10px 0;
 }
 
-.ah--card-photo .ah--card-heading {
-  padding: 20px 20px 0 20px;
-}
-
-.ah--card-photo .ah--card-text {
-  padding: 0 20px 20px 20px;
-}
-
-.ah--card-img {
+.ah-card--img {
   width: 100%;
   vertical-align: bottom;
   max-height: 168px;
   overflow: hidden;
 }
 
-.ah--card-photoWithBtn {
+.ah-card--photoWithBtn {
   padding: 0;
 }
 
-.ah--card-photoWithBtn .ah--card-img {
+.ah-card--photoWithBtn .ah-card--img {
   max-height: 122px;
   overflow: hidden;
 }
 
-.ah--card-photoWithBtn .ah--card-wrapper {
-  padding: 20px;
-}
-
-.ah--card-photoWithBtn .ah--card-heading {
-  color: #d40011;
-  padding: 20px 0;
-  font-size: 20px;
-  margin: 0;
-}
-
-.ah--card-photoWithBtn .ah--card-text {
-  padding-bottom: 20px;
-  color: #d40011;
-}
-
-.ah--card-iconOnTop figure {
+.ah-card--iconOnTop .ah-card--icon {
+  width: 100%;
   max-width: 48px;
 }
 
-.ah--card-iconOnTop figure img {
-  width: 100%;
-}
-
-.ah--card-iconOnTop .ah--card-heading {
+.ah-card--iconOnTop .ah-card--heading {
   margin-top: 10px;
 }
 
-.ah--card-iconOnLeft .ah--card-wrapper {
+.ah-card--iconOnTop .ah-card--text p {
+  margin: 0.5rem auto;
+}
+
+.ah-card--iconOnLeft .ah-card--wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 
-.ah--card-iconOnLeft figure {
-  max-width: 42px;
-  min-width: 35px;
-  margin-right: 16px;
+.ah-card--iconOnLeft .ah-card--iconContainer {
+  max-width: 58px;
 }
 
-.ah--card-iconOnLeft figure img {
-  width: 100%;
-  padding-bottom: 16px;
+.ah-card--iconOnLeft .ah-card--icon {
+  padding-right: 16px;
+  word-wrap: break-word;
+  width: 58px;
 }
 
-.ah--card-iconOnLeft .ah--card-heading {
+.ah-card--iconOnLeft .ah-card--heading {
   color: #252525;
+}
+
+.ah-card--noContainer {
+  background-color: transparent;
+}
+
+h1 {
+  font-family: regularFont;
+  font-size: 24px;
+  color: #252525;
+}
+
+h2 {
+  font-family: thinFont;
+  font-size: 28px;
+  color: #252525;
+}
+
+h3 {
+  font-family: boldFont;
+  font-size: 18px;
+  color: #d40011;
+}
+
+h4 {
+  font-family: boldFont;
+  font-size: 16px;
+  color: #252525;
+}
+
+div,
+section,
+p {
+  font-family: lightFont;
+  font-size: 1rem;
+  color: #757575;
+  line-height: 1.4;
+}
+
+.ah-quoteText {
+  font-size: 18px;
+  font-family: regularFont;
+  color: #252525;
+}
+
+.ah-readTimeIndicator::before {
+  content: "\f017";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  padding-right: 8px;
+}
+
+.ah-subHeading {
+  font-size: 16px;
+  font-family: regularFont;
+  color: #252525;
+}
+
+.fa-chevron-right {
+  color: #d40011;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.ah-breadcrumbNav {
+  text-decoration: none;
+  color: #252525;
+  font-size: 14px;
+  font-family: lightFont;
+  cursor: pointer;
+}
+
+.ah-secondaryLink {
+  font-size: 16px;
+  font-family: regularFont;
+  color: #757575;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.ah-secondaryLink::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-left: 8px;
+  content: "\f054";
+  color: #d40011;
+}
+
+.ah-secondaryLink:hover {
+  position: relative;
+  top: -2px;
+}
+
+.ah-col5 {
+  margin: 0 auto;
+}
+
+.ah-col5 section {
+  max-width: 220px;
+}
+
+@media (min-width: 480px) {
+  .ah-col5 {
+    display: flex;
+    max-width: 700px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .ah-col5 section {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .ah-col5 {
+    max-width: 1200px;
+  }
+  .ah-col5 .ah-card--notDisplay {
+    display: none;
+  }
+}
+
+.ah-col4 {
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.ah-col4 section {
+  max-width: 230px;
+}
+
+@media (min-width: 490px) {
+  .ah-col4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ah-col4 section {
+    max-width: 250px;
+    min-width: 230px;
+  }
+}
+
+@media (min-width: 750px) {
+  .ah-col4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1080px) {
+  .ah-col4 {
+    max-width: 1050px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.ah-col3 {
+  margin: 0 auto;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.ah-col3 section {
+  max-width: 300px;
+  min-width: 250px;
+}
+
+@media (min-width: 640px) {
+  .ah-col3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ah-col3 section {
+    min-width: 300px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .ah-col3 {
+    padding: 0 20px;
+    max-width: 1050px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 html {
@@ -590,10 +800,6 @@ body {
   min-height: 100%;
   position: relative;
   padding-bottom: 8rem;
-}
-
-main {
-  padding-top: 100px;
 }
 
 /*apply a natural box layout model to all elements*/
