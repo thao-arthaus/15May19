@@ -1,6 +1,8 @@
 .trialCards {
   margin: 0.5rem 0;
   display: flex;
+  display: -ms-flexbox;
+  display: flexbox;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
@@ -129,12 +131,16 @@
 .ah-card--iconOnLeft {
   .ah-card--wrapper {
     display: grid;
-    grid-template-columns: 42px auto;
-    grid-column-gap: 16px;
+    display: -ms-grid;
+    -ms-grid-columns: 58px auto;
+    grid-template-columns: 58px auto;
+    //grid-column-gap: 16px;
   }
 
   .ah-card--img {
     padding-bottom: 16px;
+    max-width: 42px;
+    // padding-right: 16px;
   }
 
   .ah-card--heading {
