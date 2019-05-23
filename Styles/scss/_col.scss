@@ -3,17 +3,19 @@
   section {
     max-width: 220px;
   }
-  @media (min-width: 650px) {
-  }
+
   @media (min-width: 480px) {
     display: flex;
-    max-width: 700px;
+    max-width: 480px;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     section {
       max-width: 200px;
     }
+  }
+  @media (min-width: 660px) {
+    max-width: 750px;
   }
   @media (min-width: 1100px) {
     max-width: 1200px;
@@ -23,65 +25,27 @@
   }
 }
 
-// .ah-col5 {
-//   margin: 0 auto;
-//   display: grid;
-//   //display: -ms-grid;
-//   grid-template-columns: repeat(1, 1fr);
-//   //-ms-grid-columns: 1fr;
-//   justify-items: center;
-//   section {
-//     max-width: 220px;
-//     //border: 1px solid coral;
-//   }
-//   @media (min-width: 430px) {
-//     grid-template-columns: repeat(2, 1fr);
-//     //-ms-grid-columns: 1fr 1fr;
-//     section {
-//       max-width: 200px;
-//     }
-//   }
-//   @media (min-width: 640px) {
-//     grid-template-columns: repeat(3, 1fr);
-//     //-ms-grid-columns: 1fr 1fr 1fr;
-//   }
-//   @media (min-width: 850px) {
-//     grid-template-columns: repeat(4, 1fr);
-//     //-ms-grid-columns: 1fr 1fr 1fr 1fr;
-//   }
-//   @media (min-width: 1060px) {
-//     max-width: 1050px;
-//     grid-template-columns: repeat(5, 1fr);
-//     //-ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-//   }
-// }
-
 .ah-col4 {
   margin: 0 auto;
-  display: grid;
-  //display: -ms-grid;
-  justify-items: center;
-  grid-template-columns: repeat(1, 1fr);
-  //-ms-grid-columns: 1fr;
   section {
     max-width: 230px;
   }
   @media (min-width: 490px) {
-    grid-template-columns: repeat(2, 1fr);
-    //-ms-grid-columns: 1fr 1fr;
+    display: flex;
+    max-width: 600px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     section {
       max-width: 250px;
       min-width: 230px;
     }
   }
-  @media (min-width: 750px) {
-    grid-template-columns: repeat(3, 1fr);
-    //-ms-grid-columns: 1fr 1fr 1fr;
+  @media (min-width: 660px) {
+    max-width: 600px;
   }
   @media (min-width: 1080px) {
-    max-width: 1050px;
-    grid-template-columns: repeat(4, 1fr);
-    //-ms-grid-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1200px;
   }
 }
 
