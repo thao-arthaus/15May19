@@ -440,7 +440,7 @@ footer {
     max-height: 122px;
     overflow: hidden; }
 
-.ah-card--iconOnTop .ah-card--img {
+.ah-card--iconOnTop .ah-card--icon {
   width: 100%;
   max-width: 48px; }
 .ah-card--iconOnTop .ah-card--heading {
@@ -538,27 +538,23 @@ p {
     top: -2px; }
 
 .ah-col5 {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  justify-items: center; }
+  margin: 0 auto; }
   .ah-col5 section {
     max-width: 220px; }
-  @media (min-width: 430px) {
+  @media (min-width: 480px) {
     .ah-col5 {
-      grid-template-columns: repeat(2, 1fr); }
+      display: flex;
+      max-width: 700px;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
       .ah-col5 section {
         max-width: 200px; } }
-  @media (min-width: 640px) {
+  @media (min-width: 1100px) {
     .ah-col5 {
-      grid-template-columns: repeat(3, 1fr); } }
-  @media (min-width: 850px) {
-    .ah-col5 {
-      grid-template-columns: repeat(4, 1fr); } }
-  @media (min-width: 1060px) {
-    .ah-col5 {
-      max-width: 1050px;
-      grid-template-columns: repeat(5, 1fr); } }
+      max-width: 1200px; }
+      .ah-col5 .ah-card--notDisplay {
+        display: none; } }
 
 .ah-col4 {
   margin: 0 auto;
