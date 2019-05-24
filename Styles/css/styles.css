@@ -312,6 +312,9 @@ footer {
     position: relative;
     cursor: pointer; }
 
+.ah-btn--marginTop {
+  margin-top: 20px; }
+
 .ah-btn--icon {
   position: relative; }
   .ah-btn--icon::after {
@@ -414,9 +417,6 @@ footer {
   margin: 10px auto;
   background-color: white;
   text-align: left; }
-
-.ah-card--padding {
-  padding: 20px; }
 
 .ah-card--grayBackground {
   background-color: #f0f0f0; }
