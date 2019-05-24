@@ -322,7 +322,8 @@ footer {
     font-size: 14px; }
 
 .ah-btn--large {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 20px; }
   .ah-btn--large::after {
     position: absolute;
     transform: translate(0, -50%);
@@ -413,6 +414,9 @@ footer {
   margin: 10px auto;
   background-color: white;
   text-align: left; }
+
+.ah-card--padding {
+  padding: 20px; }
 
 .ah-card--grayBackground {
   background-color: #f0f0f0; }
