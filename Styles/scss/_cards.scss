@@ -12,13 +12,29 @@
 .section-background {
   width: 100%;
   background-color: white;
+  margin: 0 auto;
 }
 
 .section-background-gray {
   width: 100%;
   background-color: $lightGray;
+  margin: 0 auto;
 }
-
+.section-background-pink {
+  width: 100%;
+  background-color: pink;
+  margin: 0 auto;
+}
+.section-background-green {
+  width: 100%;
+  background-color: palegreen;
+  margin: 0 auto;
+}
+.section-background-turquoise {
+  width: 100%;
+  background-color: paleturquoise;
+  margin: 0 auto;
+}
 .quote-area,
 .readTime-area {
   max-width: 300px;
@@ -31,7 +47,7 @@
   //border: 1px solid cadetblue;
   min-width: 150px; //could be changed to fix the project
   max-width: 400px;
-  width: 80%;
+  // width: 80%;
   margin: 10px auto;
   background-color: white;
   text-align: left;
@@ -46,7 +62,7 @@
 .ah-card--wrapperNoLeftPadding {
   padding: 20px 0;
 }
-
+//================CARD RESOURCE LINK =================//
 .ah-card--resourceLink {
   h4::after {
     content: "\f105";
@@ -78,11 +94,11 @@
 //==============CARD WITH PHOTO============//
 .ah-card--photo {
   padding: 0;
-  margin: 10px 0;
+  margin: 10px auto;
   // .ah-card--heading {
   //   padding: 20px 20px 0 20px;
   // }
-
+  max-width: 300px;
   // .ah-card--text {
   //   padding: 0 20px 20px;
   // }

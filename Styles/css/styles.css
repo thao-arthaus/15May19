@@ -378,11 +378,28 @@ footer {
 
 .section-background {
   width: 100%;
-  background-color: white; }
+  background-color: white;
+  margin: 0 auto; }
 
 .section-background-gray {
   width: 100%;
-  background-color: #f0f0f0; }
+  background-color: #f0f0f0;
+  margin: 0 auto; }
+
+.section-background-pink {
+  width: 100%;
+  background-color: pink;
+  margin: 0 auto; }
+
+.section-background-green {
+  width: 100%;
+  background-color: palegreen;
+  margin: 0 auto; }
+
+.section-background-turquoise {
+  width: 100%;
+  background-color: paleturquoise;
+  margin: 0 auto; }
 
 .quote-area,
 .readTime-area {
@@ -393,7 +410,6 @@ footer {
   padding: 20px;
   min-width: 150px;
   max-width: 400px;
-  width: 80%;
   margin: 10px auto;
   background-color: white;
   text-align: left; }
@@ -429,7 +445,8 @@ footer {
 
 .ah-card--photo {
   padding: 0;
-  margin: 10px 0; }
+  margin: 10px auto;
+  max-width: 300px; }
 
 .ah-card--img {
   width: 100%;
@@ -583,7 +600,8 @@ p {
       max-width: 1200px; } }
 
 .ah-col3 {
-  margin: 1rem auto; }
+  margin: 1rem auto;
+  padding: 1rem 0; }
   .ah-col3 .ah-card--notDisplay {
     display: none; }
   .ah-col3 section {
@@ -601,11 +619,17 @@ p {
         background-color: transparent; }
       .ah-col3 section {
         min-width: 300px; } }
-  @media (min-width: 1080px) {
+  @media (min-width: 1204px) {
     .ah-col3 {
-      max-width: 1200px; }
+      max-width: 1000px; }
       .ah-col3 .ah-card--notDisplay {
-        display: none; } }
+        display: block;
+        height: 0;
+        min-height: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0; } }
 
 html {
   -webkit-text-size-adjust: 100%;
