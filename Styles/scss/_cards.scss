@@ -168,4 +168,8 @@
 
 .ah-card--noContainer {
   background-color: transparent;
+  padding: 20px 0;
+  .ah-card--text {
+    font-size: 14px;
+  }
 }
