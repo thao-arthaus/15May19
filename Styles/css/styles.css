@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* 
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -349,22 +348,22 @@ footer {
 
 @font-face {
   font-family: regularFont;
-  src: url(../fonts/UniversNextPro-Regular.ttf) format(‘truetype’), url(../fonts/UniversNextPro-Regular.woff) format("woff");
+  src: url(../fonts/UniversNextPro-Regular.woff);
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: lightFont;
-  src: url(../fonts/UniversNextPro-Light.ttf) format(‘truetype’), url(../fonts/UniversNextPro-Light.woff) format("woff");
+  src: url(../fonts/UniversNextPro-Light.woff);
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: boldFont;
-  src: url(../fonts/UniversNextPro-Bold.ttf) format(‘truetype’), url(../fonts/UniversNextPro-Bold.woff) format("woff");
+  src: url(../fonts/UniversNextPro-Bold.woff);
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: thinFont;
-  src: url(../fonts/UniversNextPro-Thin.ttf) format(‘truetype’), url(../fonts/UniversNextPro-Thin.woff) format("woff");
+  src: url(../fonts/UniversNextPro-Thin.woff);
   font-style: normal;
   font-weight: normal; }
 .trialCards {
