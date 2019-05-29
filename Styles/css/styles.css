@@ -613,7 +613,7 @@ p {
         min-width: 230px; } }
   @media (min-width: 660px) {
     .ah-col4 {
-      max-width: 600px; } }
+      max-width: 700px; } }
   @media (min-width: 1080px) {
     .ah-col4 {
       max-width: 1150px; } }
@@ -629,7 +629,7 @@ p {
   @media (min-width: 654px) {
     .ah-col3 {
       display: flex;
-      max-width: 700px;
+      max-width: 800px;
       -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
