@@ -301,7 +301,7 @@ footer {
   display: inline-block;
   font-size: 16px;
   transition: 0.1s ease-in-out;
-  background-color: white; }
+  background-color: transparent; }
   .ah-btn:hover {
     background-color: #252525;
     color: white;
@@ -383,12 +383,14 @@ footer {
 .section-background-white {
   width: 100%;
   background-color: white;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 20px; }
 
 .section-background-gray {
   width: 100%;
   background-color: #f0f0f0;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 20px; }
 
 .section-background-pink {
   width: 100%;
@@ -500,8 +502,12 @@ footer {
 .ah-heading1,
 h1 {
   font-family: regularFont;
-  font-size: 24px;
+  font-size: 38px;
   color: #252525; }
+  @media (min-width: 1105px) {
+    .ah-heading1,
+    h1 {
+      font-size: 38px; } }
 
 .ah-heading2,
 h2 {
@@ -531,6 +537,9 @@ p {
   font-size: 1rem;
   color: #757575;
   line-height: 1.4; }
+
+a {
+  color: #757575; }
 
 .ah-quoteText {
   font-size: 18px;
@@ -576,6 +585,19 @@ p {
     position: relative;
     top: -2px; }
 
+.ah-linkSection {
+  margin: 20px auto;
+  max-width: 1200px;
+  text-align: center; }
+
+.ah-btnWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+  .ah-btnWrapper .ah-btn {
+    margin: 5px; }
+
 .ah-col5 {
   margin: 1rem auto; }
   .ah-col5 section {
@@ -619,8 +641,7 @@ p {
       max-width: 1150px; } }
 
 .ah-col3 {
-  margin: 1rem auto;
-  padding: 1rem 0; }
+  margin: 0rem auto; }
   .ah-col3 .ah-card--notDisplay {
     display: none; }
   .ah-col3 section {
@@ -676,7 +697,7 @@ p {
   padding-bottom: 20px; }
   @media (min-width: 800px) {
     .ah-block--content {
-      padding: 20px; } }
+      padding: 20px 20px 0 20px; } }
 
 @media (min-width: 800px) {
   .ah-block--fullContent {
@@ -715,10 +736,30 @@ p {
 
 .ah-banner {
   width: 100%;
-  min-height: 242px; }
+  min-height: 150px; }
+
+.ah-banner--wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px; }
+
+.ah-banner--heading {
+  background-image: url(../../images/global/paint_stroke_short.png);
+  text-align: center;
+  background-repeat: no-repeat;
+  color: white;
+  max-width: 230px;
+  min-height: 50px; }
 
 .ah-banner--home {
   background-image: url(../../images/home/home_heroimage.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.ah-banner--discover {
+  background-image: url(../../images/global/paint_stroke_section_banner.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }

@@ -1,8 +1,12 @@
 .ah-heading1,
 h1 {
     font-family: regularFont;
-    font-size: 24px;
+    font-size: 38px; //should be 24px
     color: $blackColor;
+
+    @media (min-width: 1105px) {
+        font-size: 38px;
+    }
 }
 
 .ah-heading2,
@@ -40,7 +44,7 @@ p {
     line-height: 1.4;
 }
 
-@media (min-width: 1055px) {
+@media (min-width: 1105px) {
     // h1 {
     //   font-size: 36px;
     // }
@@ -63,6 +67,10 @@ p {
     // p {
     //     font-size: 1.5rem;
     // }
+}
+
+a {
+    color: $grayColor;
 }
 
 .ah-quoteText {
@@ -118,5 +126,22 @@ p {
     &:hover {
         position: relative;
         top: -2px;
+    }
+}
+
+.ah-linkSection {
+    margin: 20px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.ah-btnWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .ah-btn {
+        margin: 5px;
     }
 }

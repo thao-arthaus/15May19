@@ -1,10 +1,33 @@
 .ah-banner {
     width: 100%;
-    min-height: 242px;
+    min-height: 150px;
+}
+
+.ah-banner--wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ah-banner--heading {
+    background-image: url(../../images/global/paint_stroke_short.png);
+    text-align: center;
+    background-repeat: no-repeat;
+    color: white;
+    max-width: 230px;
+    min-height: 50px;
 }
 
 .ah-banner--home {
     background-image: url(../../images/home/home_heroimage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ah-banner--discover {
+    background-image: url(../../images/global/paint_stroke_section_banner.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
