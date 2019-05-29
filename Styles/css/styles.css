@@ -713,6 +713,16 @@ p {
     .ah-block--smallScreen {
       display: none; } }
 
+.ah-banner {
+  width: 100%;
+  min-height: 242px; }
+
+.ah-banner--home {
+  background-image: url(../../images/home/home_heroimage.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;

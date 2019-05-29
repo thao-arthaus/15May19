@@ -1,0 +1,11 @@
+.ah-banner {
+  width: 100%;
+  min-height: 242px;
+}
+
+.ah-banner--home {
+  background-image: url(../../images/home/home_heroimage.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
