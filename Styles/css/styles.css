@@ -502,9 +502,9 @@ footer {
 .ah-heading1,
 h1 {
   font-family: regularFont;
-  font-size: 38px;
+  font-size: 24px;
   color: #252525; }
-  @media (min-width: 1105px) {
+  @media (min-width: 650px) {
     .ah-heading1,
     h1 {
       font-size: 38px; } }
@@ -512,8 +512,12 @@ h1 {
 .ah-heading2,
 h2 {
   font-family: thinFont;
-  font-size: 28px;
+  font-size: 20px;
   color: #252525; }
+  @media (min-width: 650px) {
+    .ah-heading2,
+    h2 {
+      font-size: 28px; } }
 
 .ah-heading3,
 h3 {
@@ -598,6 +602,20 @@ a {
   .ah-btnWrapper .ah-btn {
     margin: 5px; }
 
+.ah-contactArea {
+  width: 90%;
+  background-color: white;
+  margin: 0px auto;
+  padding: 10px; }
+  @media (min-width: 800px) {
+    .ah-contactArea {
+      max-width: 1150px;
+      display: flex;
+      justify-content: space-between; } }
+
+.contact {
+  padding: 20px 0; }
+
 .ah-col5 {
   margin: 1rem auto; }
   .ah-col5 section {
@@ -613,7 +631,7 @@ a {
         max-width: 200px; } }
   @media (min-width: 660px) {
     .ah-col5 {
-      max-width: 750px; } }
+      max-width: 600px; } }
   @media (min-width: 1100px) {
     .ah-col5 {
       max-width: 1150px; }
@@ -736,29 +754,50 @@ a {
 
 .ah-banner {
   width: 100%;
-  min-height: 150px; }
+  min-height: 150px;
+  margin-bottom: 20px; }
 
 .ah-banner--wrapper {
   max-width: 1200px;
-  width: 90%;
   margin: 0 auto;
   padding: 20px; }
 
-.ah-banner--heading {
+.ah-banner--heading1 {
   background-image: url(../../images/global/paint_stroke_short.png);
   text-align: center;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   color: white;
-  max-width: 230px;
-  min-height: 50px; }
+  display: inline-block;
+  padding: 10px 20px; }
+  @media (min-width: 650px) {
+    .ah-banner--heading1 {
+      padding: 0 35px; } }
+
+.ah-banner--heading2 {
+  background-image: url(../../images/home/paint_stroke_large.png);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: white;
+  display: inline-block;
+  padding: 0 20px 0 10px; }
 
 .ah-banner--home {
   background-image: url(../../images/home/home_heroimage.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: 50% 0;
   background-repeat: no-repeat; }
+  @media (min-width: 900px) {
+    .ah-banner--home {
+      min-height: 250px; } }
+  @media (min-width: 1200px) {
+    .ah-banner--home {
+      min-height: 350px; } }
 
-.ah-banner--discover {
+.ah-banner--subPage {
   background-image: url(../../images/global/paint_stroke_section_banner.jpg);
   background-size: cover;
   background-position: center;

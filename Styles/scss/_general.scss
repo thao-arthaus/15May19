@@ -1,10 +1,10 @@
 .ah-heading1,
 h1 {
     font-family: regularFont;
-    font-size: 38px; //should be 24px
+    font-size: 24px; //should be 24px
     color: $blackColor;
 
-    @media (min-width: 1105px) {
+    @media (min-width: 650px) {
         font-size: 38px;
     }
 }
@@ -12,8 +12,12 @@ h1 {
 .ah-heading2,
 h2 {
     font-family: thinFont;
-    font-size: 28px;
+    font-size: 20px;
     color: $blackColor;
+
+    @media (min-width: 650px) {
+        font-size: 28px;
+    }
 }
 
 .ah-heading3,
@@ -144,4 +148,21 @@ a {
     .ah-btn {
         margin: 5px;
     }
+}
+
+.ah-contactArea {
+    width: 90%;
+    background-color: white;
+    margin: 0px auto;
+    padding: 10px;
+
+    @media (min-width: 800px) {
+        max-width: 1150px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.contact {
+    padding: 20px 0;
 }
