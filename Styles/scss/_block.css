@@ -41,6 +41,7 @@
   max-width: 400px;
   min-width: 250px;
   padding: 20px;
+  position: relative;
 }
 
 @media (min-width: 800px) {
@@ -52,6 +53,14 @@
 
 .ah-block--imgContainer img {
   width: 100%;
+}
+
+.ah-playIcon {
+  max-width: 61px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .ah-block--bigScreen {

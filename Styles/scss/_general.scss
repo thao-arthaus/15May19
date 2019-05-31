@@ -1,168 +1,173 @@
 .ah-heading1,
 h1 {
-    font-family: regularFont;
-    font-size: 24px; //should be 24px
-    color: $blackColor;
+  font-family: regularFont;
+  font-size: 24px; //should be 24px
+  color: $blackColor;
 
-    @media (min-width: 650px) {
-        font-size: 38px;
-    }
+  @media (min-width: 650px) {
+    font-size: 38px;
+  }
 }
 
 .ah-heading2,
 h2 {
-    font-family: thinFont;
-    font-size: 20px;
-    color: $blackColor;
+  font-family: thinFont;
+  font-size: 20px;
+  color: $blackColor;
 
-    @media (min-width: 650px) {
-        font-size: 28px;
-    }
+  @media (min-width: 650px) {
+    font-size: 28px;
+  }
 }
 
 .ah-heading3,
 h3 {
-    font-family: boldFont;
-    font-size: 18px;
-    color: $redColor;
+  font-family: boldFont;
+  font-size: 18px;
+  color: $redColor;
 }
 
 .ah-heading4,
 h4 {
-    font-family: boldFont;
-    font-size: 16px;
-    color: $blackColor;
+  font-family: boldFont;
+  font-size: 16px;
+  color: $blackColor;
 }
 
 h5 {
-    font-family: boldFont;
+  font-family: boldFont;
 }
-
+.ah-margin {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 600px;
+}
 //body text
 div,
 section,
 p {
-    font-family: lightFont;
-    font-size: 1rem;
-    color: $grayColor;
-    line-height: 1.4;
+  font-family: lightFont;
+  font-size: 1rem;
+  color: $grayColor;
+  line-height: 1.4;
 }
 
 @media (min-width: 1105px) {
-    // h1 {
-    //   font-size: 36px;
-    // }
+  // h1 {
+  //   font-size: 36px;
+  // }
 
-    // h2 {
-    //   font-size: 26px;
-    // }
+  // h2 {
+  //   font-size: 26px;
+  // }
 
-    // h3 {
-    //   font-size: 22px;
-    // }
+  // h3 {
+  //   font-size: 22px;
+  // }
 
-    // h4 {
-    //   font-size: 16px;
-    // }
+  // h4 {
+  //   font-size: 16px;
+  // }
 
-    //body text
-    // div,
-    // section,
-    // p {
-    //     font-size: 1.5rem;
-    // }
+  //body text
+  // div,
+  // section,
+  // p {
+  //     font-size: 1.5rem;
+  // }
 }
 
 a {
-    color: $grayColor;
+  color: $grayColor;
 }
 
 .ah-quoteText {
-    font-size: 18px;
-    font-family: regularFont;
-    color: $blackColor;
+  font-size: 18px;
+  font-family: regularFont;
+  color: $blackColor;
 }
 
 .ah-readTimeIndicator {
-    &::before {
-        content: "\f017";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 400;
-        padding-right: 8px;
-    }
+  &::before {
+    content: "\f017";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    padding-right: 8px;
+  }
 }
 
 .ah-subHeading {
-    font-size: 16px;
-    font-family: regularFont;
-    color: $blackColor;
+  font-size: 16px;
+  font-family: regularFont;
+  color: $blackColor;
 }
 
 .fa-chevron-right {
-    color: $redColor;
-    padding-left: 8px;
-    padding-right: 8px;
+  color: $redColor;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .ah-breadcrumbNav {
-    text-decoration: none;
-    color: $blackColor;
-    font-size: 14px;
-    font-family: lightFont;
-    cursor: pointer;
+  text-decoration: none;
+  color: $blackColor;
+  font-size: 14px;
+  font-family: lightFont;
+  cursor: pointer;
 }
 
 .ah-secondaryLink {
-    font-size: 16px;
-    font-family: regularFont;
-    color: $grayColor;
-    transition: 0.1s;
-    cursor: pointer;
+  font-size: 16px;
+  font-family: regularFont;
+  color: $grayColor;
+  transition: 0.1s;
+  cursor: pointer;
 
-    &::after {
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        padding-left: 8px;
-        content: "\f054";
-        color: $redColor;
-    }
+  &::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-left: 8px;
+    content: "\f054";
+    color: $redColor;
+  }
 
-    &:hover {
-        position: relative;
-        top: -2px;
-    }
+  &:hover {
+    position: relative;
+    top: -2px;
+  }
 }
 
 .ah-linkSection {
-    margin: 20px auto;
-    max-width: 1200px;
-    text-align: center;
+  margin: 20px auto;
+  max-width: 1200px;
+  text-align: center;
 }
 
 .ah-btnWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 
-    .ah-btn {
-        margin: 5px;
-    }
+  .ah-btn {
+    margin: 5px;
+  }
 }
 
 .ah-contactArea {
-    width: 90%;
-    background-color: white;
-    margin: 0px auto;
-    padding: 10px;
+  width: 90%;
+  background-color: white;
+  margin: 0px auto;
+  padding: 10px;
 
-    @media (min-width: 800px) {
-        max-width: 1150px;
-        display: flex;
-        justify-content: space-between;
-    }
+  @media (min-width: 800px) {
+    max-width: 1150px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
 }
 
 .contact {
-    padding: 20px 0;
+  padding: 20px 0;
 }

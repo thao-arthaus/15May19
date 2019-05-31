@@ -496,6 +496,9 @@ footer {
 .ah-card--noContainer {
   background-color: transparent;
   padding: 20px 0; }
+  .ah-card--noContainer .ah-card--heading {
+    font-family: regularFont;
+    color: #252525; }
   .ah-card--noContainer .ah-card--text {
     font-size: 14px; }
 
@@ -533,6 +536,11 @@ h4 {
 
 h5 {
   font-family: boldFont; }
+
+.ah-margin {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 600px; }
 
 div,
 section,
@@ -611,7 +619,8 @@ a {
     .ah-contactArea {
       max-width: 1150px;
       display: flex;
-      justify-content: space-between; } }
+      justify-content: space-between;
+      padding: 10px 20px; } }
 
 .contact {
   padding: 20px 0; }
@@ -701,6 +710,19 @@ a {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; } }
 
+.ah-col1 .ah-card {
+  min-width: 250px; }
+
+.ah-col {
+  display: block;
+  max-width: 600px;
+  width: 90%;
+  margin: 0rem auto; }
+  @media (min-width: 800px) {
+    .ah-col {
+      display: flex;
+      max-width: 1150px; } }
+
 .ah-block {
   max-width: 600px;
   margin: 0rem auto;
@@ -731,13 +753,21 @@ a {
   width: 100%;
   max-width: 400px;
   min-width: 250px;
-  padding: 20px; }
+  padding: 20px;
+  position: relative; }
   @media (min-width: 800px) {
     .ah-block--imgContainer {
       max-width: 482px;
       padding: 40px 20px; } }
   .ah-block--imgContainer img {
     width: 100%; }
+
+.ah-playIcon {
+  max-width: 61px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 .ah-block--bigScreen {
   display: none; }

@@ -129,3 +129,21 @@
     flex-wrap: wrap;
   }
 }
+
+.ah-col1 .ah-card {
+  min-width: 250px;
+}
+
+.ah-col {
+  display: block;
+  max-width: 600px;
+  width: 90%;
+  margin: 0rem auto;
+}
+
+@media (min-width: 800px) {
+  .ah-col {
+    display: flex;
+    max-width: 1150px;
+  }
+}
