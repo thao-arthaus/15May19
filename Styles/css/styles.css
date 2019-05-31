@@ -574,6 +574,13 @@ a {
   padding-left: 8px;
   padding-right: 8px; }
 
+.ah-breadcrumb--area {
+  width: 90%;
+  margin: 1rem auto 0.5rem auto;
+  max-width: 1150px; }
+  .ah-breadcrumb--area a {
+    text-decoration: none; }
+
 .ah-breadcrumbNav {
   text-decoration: none;
   color: #252525;

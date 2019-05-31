@@ -37,11 +37,13 @@ h4 {
 h5 {
   font-family: boldFont;
 }
+
 .ah-margin {
   margin: 0 auto;
   width: 90%;
   max-width: 600px;
 }
+
 //body text
 div,
 section,
@@ -50,31 +52,6 @@ p {
   font-size: 1rem;
   color: $grayColor;
   line-height: 1.4;
-}
-
-@media (min-width: 1105px) {
-  // h1 {
-  //   font-size: 36px;
-  // }
-
-  // h2 {
-  //   font-size: 26px;
-  // }
-
-  // h3 {
-  //   font-size: 22px;
-  // }
-
-  // h4 {
-  //   font-size: 16px;
-  // }
-
-  //body text
-  // div,
-  // section,
-  // p {
-  //     font-size: 1.5rem;
-  // }
 }
 
 a {
@@ -106,6 +83,16 @@ a {
   color: $redColor;
   padding-left: 8px;
   padding-right: 8px;
+}
+
+.ah-breadcrumb--area {
+  width: 90%;
+  margin: 1rem auto 0.5rem auto;
+  max-width: 1150px;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .ah-breadcrumbNav {
