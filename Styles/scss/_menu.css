@@ -1,0 +1,200 @@
+nav {
+  height: 50px;
+}
+
+.menu-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  z-index: 200;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menu-bar li {
+  margin: 0 4px;
+}
+
+@media (min-width: 1055px) {
+  .menu-bar li {
+    margin: 0 8px;
+  }
+}
+
+.menu-bar .select-language {
+  color: #a3a3a3;
+  font-family: regularFont;
+}
+
+.menu-bar .select-language span {
+  margin-right: 4px;
+  display: none;
+}
+
+@media (min-width: 390px) {
+  .menu-bar .select-language span {
+    display: inline;
+  }
+}
+
+@media (min-width: 1055px) {
+  .menu-bar .select-language span {
+    margin-right: 8px;
+  }
+}
+
+.HSBC-logo {
+  flex-grow: 2;
+}
+
+.HSBC-logo-img {
+  width: 100px;
+}
+
+.select-language-btn {
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 16px 8px 8px;
+  width: auto;
+  box-sizing: border-box;
+  font-family: regularFont;
+  margin: 0;
+  border: 1px solid #aaa;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../../images/chevron-down-solid.svg"), linear-gradient(#757575, #757575);
+  background-color: #ffffff;
+  color: #252525;
+  background-position: right 4px top 50%, 0 0;
+  background-size: 10px auto, 100%;
+  background-repeat: no-repeat;
+  background-color: #757575;
+}
+
+@media (min-width: 760px) {
+  .select-language-btn {
+    padding: 8px 32px 8px 8px;
+    background-position: right 8px top 50%, 0 0;
+    background-size: 14px auto, 100%;
+  }
+}
+
+.select-language-btn option {
+  font-weight: normal;
+}
+
+.select-language-btn:hover, .select-language-btn:focus {
+  color: #000;
+  background-color: #f3f3f3;
+  background-image: url("../../images/chevron-down-solid.svg"), none;
+  outline: none;
+  border: 1px solid #f3f3f3;
+  position: relative;
+  top: -2px;
+  padding-top: 6px;
+  padding-bottom: 10px;
+}
+
+.select-language-btn::-ms-expand {
+  display: none;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("../../images/bars-solid.svg");
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.menu-icon.active {
+  background-image: url("../../images/times-solid.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+}
+
+.main-menu-list {
+  z-index: 199;
+  padding: 0 1rem 1rem;
+  background-color: #252525;
+  position: relative;
+  top: -600px;
+  height: auto;
+  width: 100%;
+  position: fixed;
+  transition: 0.5s ease-in-out;
+}
+
+.main-menu-list .main-menu-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 1055px) {
+  .main-menu-list .main-menu-list-wrapper {
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.main-menu-list .section-list {
+  margin: 8px 0.5rem 0;
+  line-height: 18px;
+  color: white;
+}
+
+@media (min-width: 1055px) {
+  .main-menu-list .section-list {
+    margin: 0 1rem;
+  }
+}
+
+.main-menu-list .section-heading {
+  font-weight: normal;
+  font-size: 19px;
+  font-family: lightFont;
+  padding: 8px 0;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #757575;
+}
+
+@media (min-width: 1055px) {
+  .main-menu-list .section-heading {
+    padding: 20px 0 14px;
+    margin-bottom: 14px;
+  }
+}
+
+.main-menu-list .section-link {
+  font-size: 1rem;
+  margin: 0px 0px 8px 0;
+  color: white;
+  text-decoration: none;
+  font-family: regularFont;
+  line-height: 1.4;
+  transition: 0.1s;
+}
+
+.main-menu-list .section-link::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-left: 8px;
+  content: "\f054";
+  color: #d40011;
+}
+
+.main-menu-list.expanded {
+  top: 50px;
+}

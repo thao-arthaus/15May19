@@ -1,0 +1,67 @@
+.ah-btn {
+  font-size: 16px;
+  color: #252525;
+  padding: 16px;
+  border-radius: 2px;
+  position: relative;
+  border: 1px solid #757575;
+  font-family: regularFont;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.ah-btn:hover {
+  background-color: #252525;
+  color: white;
+  border-color: #252525;
+  padding-bottom: 18px;
+  cursor: pointer;
+  position: relative;
+  transform: translateY(-2px);
+}
+
+.ah-btn:hover span {
+  position: relative;
+  top: -2px;
+  transition: .3s;
+  font-size: 16px;
+}
+
+.ah-btn--icon {
+  position: relative;
+}
+
+.ah-btn--icon::after {
+  content: '\f105';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-left: 2px;
+}
+
+.ah-btn--large {
+  width: 100%;
+}
+
+.ah-btn--large::after {
+  position: absolute;
+  transform: translate(0, -50%);
+  right: 0;
+  margin-right: 16px;
+  top: 50%;
+}
+
+.cardContainer {
+  margin: 16px;
+  width: 15%;
+  border: 1px solid red;
+  padding: 16px;
+}
+
+.cardContainer .cardContent {
+  margin: 0 auto 16px auto;
+  text-align: justify;
+}
+
+.cardContainer .cardContent figure {
+  text-align: center;
+}
