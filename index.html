@@ -24,90 +24,98 @@
   <body>
     <!--=============NAVIGATION BAR===================-->
     <nav>
-      <ul class="menu-bar">
-        <li class="HSBC-logo">
-          <a href="index.html"
-            ><img class="HSBC-logo-img" src="images/HSBClogo.png" alt="HSBClogo"
-          /></a>
-        </li>
-        <li class="select-language">
-          <span>Select Language</span>
-          <select class="select-language-btn">
-            <option value="English">English</option>
-            <option value="English">French</option>
-          </select>
-        </li>
-        <li id="menu-icon" class="menu-icon "></li>
-      </ul>
-      <div id="main-menu-list" class="main-menu-list">
-        <div class="main-menu-list-wrapper">
-          <div class="section-list">
+      <ul class="ah__menu-bar">
+          <li class="ah__menu-bar-item ah__menu-bar__logo-wrapper">
+            <a href="index.html"
+              ><img class="ah__menu-bar__logo" src="images/HSBClogo.png" alt="HSBClogo"
+            /></a>
+          </li>
+          <li class="ah__menu-bar-item ">
+            <span class='ah__menu-bar__languages-text'>Select Language</span>
+            <select class="ah__menu-bar__select-languages">
+              <option value="English">English</option>
+              <option value="English">French</option>
+            </select>
+          </li>
+          <li id="ah__menu-btn" class="ah__menu-bar-item">
+            <span class="ah__menu-btn__bar"></span>
+            <span class="ah__menu-btn__bar"></span>
+            <span class="ah__menu-btn__bar"></span>
+          </li>
+        </ul>
+     <div id='ah__main-nav' class="ah__main-nav">
+        <ul class="ah__main-nav__list-wrapper">
+          <!--  DISCOVER  -->
+          <li class="ah__main-nav__columns">
             <ul>
-              <li class="section-heading">
-                Discover
-              </li>
-              <li>
-                <a class="section-link" href="discover.html"
-                  >Welcome to HSBC Career</a
-                >
+              <li class="ah__main-nav__item">Discover</li>
+              <li class="ah__main-nav__item">
+                <a href="#" class="ah__main-nav__link">Welcome to HSBC Career</a>
               </li>
             </ul>
-          </div>
-          <div class="section-list">
-            <ul class="develop-list">
-              <li class="section-heading">
-                Develop
-              </li>
-              <li>
-                <a class="section-link" href="develop.html"
-                  >How to develop in role</a
-                >
+          </li>
+      
+          <!--  DEVELOP  -->
+          <li class="ah__main-nav__columns">
+            <ul>
+              <li class="ah__main-nav__item">Develop</li>
+              <li class="ah__main-nav__item">
+                <a href="#" class="ah__main-nav__link">How to develop in role</a>
               </li>
             </ul>
-          </div>
-          <div class="section-list">
-            <ul class="progress-list">
-              <li class="section-heading">
-                Progress
+          </li>
+      
+          <li class="ah__main-nav__columns">
+            <ul>
+              <li class="ah__main-nav__item">Progress</li>
+              <li class="ah__main-nav__item">
+                <a href="#" class="ah__main-nav__link">Planning for a new role</a>
               </li>
-              <li>
-                <a class="section-link" href="#">Planning for a new role</a>
+              <li class="ah__main-nav__item">
+                <a href="#" class="ah__main-nav__link">Preparing for a new role</a>
               </li>
-              <li>
-                <a class="section-link" href="#">Preparing for a new role</a>
+              <li class="ah__main-nav__item">
+                <a href="#" class="ah__main-nav__link">Applying for a new role</a>
               </li>
-              <li>
-                <a class="section-link" href="#">Applying for a new role</a>
-              </li>
-              <li><a class="section-link" href="#">Promotion</a></li>
-            </ul>
-          </div>
-          <div class="section-list">
-            <ul class="perform-list">
-              <li class="section-heading">
-                Perform
-              </li>
-              <li><a class="section-link" href="#">Becoming a manager</a></li>
-              <li><a class="section-link" href="#">Returning to work</a></li>
-              <li><a class="section-link" href="#">Make an impact</a></li>
-            </ul>
-          </div>
-          <div class="section-list">
-            <ul class="contribute-list">
-              <li class="section-heading">
-                Contribute
-              </li>
-              <li>
-                <a class="section-link" href="#">Connecting with colleagues</a>
+              <li class="ah__main-nav__item">
+                <a href="#" class="ah__main-nav__link">Promotion</a>
               </li>
             </ul>
-          </div>
-        </div>
+          </li>
+      
+          <li class="ah__main-nav__columns">
+            <ul>
+              <li class="ah__main-nav__item">Perform</li>
+              <li class="ah__main-nav__item">
+                <a href="#" class="ah__main-nav__link">Becoming a manager</a>
+              </li>
+              <li class="ah__main-nav__item">
+                <a href="#" class="ah__main-nav__link">Returning to work</a>
+              </li>
+              <li class="ah__main-nav__item">
+                <a href="#" class="ah__main-nav__link">Make an impact</a>
+              </li>
+            </ul>
+          </li>
+          <li class="ah__main-nav__columns">
+            <ul>
+              <li class="ah__main-nav__item">Contribute</li>
+              <li class="ah__main-nav__item">
+                <a href="#" class="ah__main-nav__link">Connecting with colleagues</a>
+              </li>
+            </ul>
+          </li>
+          <!-- for flex wrap-->
+          <li class="ah__main-nav__columns ah__main-nav__display-none">
+              
+            </li>
+        </ul>
       </div>
     </nav>
 
     <!--=================MAIN================-->
-
+    
+    
     <main>
       <!--hero image-->
       <section class="ah-banner ah-banner--home">
@@ -119,9 +127,15 @@
           </h2>
         </section>
       </section>
+
+
+      
+
+
+
       <!--List of subpages-->
       <section class="section-background-white">
-        <section class="ah-col5">
+        <!-- <section class="ah-col5">
           <section class="ah-card ah-card--photoWithBtn">
             <img
               src="images/home/discover_thumb.jpg"
@@ -199,10 +213,163 @@
           <section
             class="ah-card ah-card--photoWithBtn ah-card--notDisplay"
           ></section>
+        </section> -->
+
+        <!-- ========NEW NEW NEW NEW===============
+        =============NEW NEW NEW NEW===============
+        =============NEW NEW NEW NEW===============
+        =============NEW NEW NEW NEW===============
+        =============NEW NEW NEW NEW===============
+        =============NEW NEW NEW NEW=============== -->
+        <!--COL 5-->
+        <section class="ah__col5">
+          <section class="ah__card-photo__home-page">
+            <img
+              src="images/home/discover_thumb.jpg"
+              alt=""
+              class="ah__card-img"
+            />
+            <h3 class="ah__card-heading__red">Discover</h3>
+            <div class="ah__card-text">
+              our approach to career development at HSBC
+            </div>
+            <div class="ah__btn ah__btn-large ah__btn-icon ah__btn-bottom">
+              <span class="ah__btn-text">Explore</span>
+            </div>
+          </section>
+          <section class="ah__card-photo__home-page">
+            <img
+              src="images/home/develop_thumb.jpg"
+              alt=""
+              class="ah__card-img"
+            />
+            <h3 class="ah__card-heading__red">Develop</h3>
+            <div class="ah__card-text">
+              in our current role
+            </div>
+            <div class="ah__btn ah__btn-large ah__btn-icon ah__btn-bottom">
+              <span class="ah__btn-text">Explore</span>
+            </div>
+          </section>
+          <section class="ah__card-photo__home-page">
+            <img
+              src="images/home/progress_thumb.jpg"
+              alt=""
+              class="ah__card-img"
+            />
+            <h3 class="ah__card-heading__red">Progress</h3>
+            <div class="ah__card-text">
+              to a new role
+            </div>
+            <div class="ah__btn ah__btn-large ah__btn-icon ah__btn-bottom">
+              <span class="ah__btn-text">Explore</span>
+            </div>
+          </section>
+          <section class="ah__card-photo__home-page">
+            <img
+              src="images/home/change_thumb.jpg"
+              alt=""
+              class="ah__card-img"
+            />
+            <h3 class="ah__card-heading__red">Change</h3>
+            <div class="ah__card-text">
+              in your role
+            </div>
+            <div class="ah__btn ah__btn-large ah__btn-icon ah__btn-bottom">
+              <span class="ah__btn-text">Explore</span>
+            </div>
+          </section>
+          <section class="ah__card-photo__home-page">
+            <img
+              src="images/home/connect_thumb.jpg"
+              alt=""
+              class="ah__card-img"
+            />
+            <h3 class="ah__card-heading__red">Contribute</h3>
+            <div class="ah__card-text">
+              and connect with colleagues
+            </div>
+            <div class="ah__btn ah__btn-large ah__btn-icon ah__btn-bottom">
+              <span class="ah__btn-text">Explore</span>
+            </div>
+          </section>
+          <section
+            class="ah__card-photo__home-page ah__card__notDisplay"
+          ></section>
         </section>
-      </section>
+
+        <!--COL 4-->
+        <!-- <section class="ah__section__bkg-gray">
+          <section class="ah__col4">
+            <section class="ah__card-photo__progress-page">
+              <h3 class="ah__card-heading__red">Planning for a new role</h3>
+              <img
+                class="ah__card-img"
+                src="/images/progress/progress_placeholder1.jpg"
+              />
+              <section class="ah__card-text-wrapper">
+                <div class="ah__card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  ut officiis consectetur.
+                </div>
+                <div class="ah__btn ah__btn-large ah__btn-icon ah__btn-bottom">
+                  <span class="ah__btn-text">Explore</span>
+                </div>
+              </section>
+            </section>
+            <section class="ah__card-photo__progress-page">
+              <h3 class="ah__card-heading__red">Preparing for a new role</h3>
+              <img
+                class="ah__card-img"
+                src="/images/progress/progress_placeholder2.jpg"
+              />
+              <section class="ah__card-text-wrapper">
+                <div class="ah__card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  ut officiis consectetur.
+                </div>
+                <div class="ah__btn ah__btn-large ah__btn-icon ah__btn-bottom">
+                  <span class="ah__btn-text">Explore</span>
+                </div>
+              </section>
+            </section>
+            <section class="ah__card-photo__progress-page">
+              <h3 class="ah__card-heading__red">Applying for a new role</h3>
+              <img
+                class="ah__card-img"
+                src="/images/progress/progress_placeholder3.jpg"
+              />
+              <section class="ah__card-text-wrapper">
+                <div class="ah__card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  ut officiis consectetur.
+                </div>
+                <div class="ah__btn ah__btn-large ah__btn-icon ah__btn-bottom">
+                  <span class="ah__btn-text">Explore</span>
+                </div>
+              </section>
+            </section>
+            <section class="ah__card-photo__progress-page">
+              <h3 class="ah__card-heading__red">Promotion</h3>
+              <img
+                class="ah__card-img"
+                src="/images/progress/progress_placeholder4.jpg"
+              />
+              <section class="ah__card-text-wrapper">
+                <div class="ah__card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  ut officiis consectetur.
+                </div>
+                <div class="ah__btn ah__btn-large ah__btn-icon ah__btn-bottom">
+                  <span class="ah__btn-text">Explore</span>
+                </div>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section> -->
       <!--Contact us-->
-      <section class="section-background-gray contact">
+      <section class="ah__section__bkg-gray contact">
         <section class="ah-contactArea">
           <h3 class="ah-heading3">Feedback</h3>
           <div>Tell us your ideas and feedbac on HSBC careers</div>

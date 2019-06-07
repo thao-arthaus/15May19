@@ -1,12 +1,16 @@
-const menuBtn = document.getElementById('menu-icon')
-const mainMenuList = document.getElementById('main-menu-list')
-menuBtn.addEventListener('click', function() {
-    if (menuBtn.className === 'menu-icon ') {
-        menuBtn.className = 'menu-icon active'
-        mainMenuList.className = 'main-menu-list expanded'
+const menuBtn = document.getElementById("ah__menu-btn");
+const mainMenuList = document.getElementById("ah__main-nav");
+const menuBtnBar = document.getElementsByClassName("ah__menu-btn__bar");
+menuBtn.addEventListener("click", function() {
+  //alert("testing");
+  // console.log(menuBtnBar);
+  for (let i = 0; i < menuBtnBar.length; i++) {
+    if (menuBtnBar[i].className === "ah__menu-btn__bar") {
+      menuBtnBar[i].className = "ah__menu-btn__bar active";
+      mainMenuList.className = "ah__main-nav expanded";
     } else {
-        menuBtn.className = 'menu-icon '
-        mainMenuList.className = 'main-menu-list'
+      menuBtnBar[i].className = "ah__menu-btn__bar";
+      mainMenuList.className = "ah__main-nav";
     }
-    //alert(menuBtn.className);
-})
+  }
+});
